@@ -633,7 +633,7 @@ class SplendorEnvSimple(gymnasium.Env):
                             [1, 0, 0, 0, 2, 2, 0],
                             [0, 2, 2, 0, 1, 0, 0],
                             [1, 1, 3, 0, 0, 0, 0]]
-        self.low_secret = [0]
+        self.low_secret = []
 
         self.middle_banquet = [[5, 0, 0, 0, 0, 0, 2],
                                [6, 0, 0, 0, 0, 0, 3],
@@ -665,7 +665,7 @@ class SplendorEnvSimple(gymnasium.Env):
                                [2, 0, 0, 1, 4, 2, 2],
                                [2, 0, 3, 3, 0, 0, 1],
                                [0, 4, 1, 2, 0, 4, 2]]
-        self.middle_secret = [0]
+        self.middle_secret = []
 
         self.high_banquet = [[3, 3, 5, 0, 3, 3, 3],
                              [0, 0, 0, 0, 7, 0, 4],
@@ -687,7 +687,7 @@ class SplendorEnvSimple(gymnasium.Env):
                              [3, 0, 0, 0, 7, 0, 5],
                              [0, 0, 0, 7, 0, 4, 4],
                              [7, 0, 0, 0, 0, 2, 4]]
-        self.high_secret = [0]
+        self.high_secret = []
 
         self.noble_banquet = [[0, 4, 0, 4, 0, 3],
                               [3, 3, 3, 0, 0, 3],
@@ -699,7 +699,7 @@ class SplendorEnvSimple(gymnasium.Env):
                               [3, 0, 3, 0, 3, 3],
                               [4, 0, 4, 0, 0, 3],
                               [0, 4, 4, 0, 0, 3]]
-        self.noble_usable = [0]
+        self.noble_usable = []
 
         self.public_money = [5, 5, 5, 5, 5, 5]  # 0-blue, 1-red, 2-green, 3-black, 4-white, 5- gold
         self.agent_money = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
