@@ -445,9 +445,11 @@ class SplendorEnvSimple(gymnasium.Env):
             self.earnMoney(1, 3, 4)
         elif action == 40:
             self.earnMoney(2, 3, 4)
-
+        
+        
+        noble_temp = self.noble_usable.copy()
         for i in range(len(self.noble_usable)):
-            noble_id = self.noble_usable[i]
+            noble_id = noble_temp[i]
             flag = True
             for j in range(5):
                 if self.noble_banquet[noble_id][j] > self.agent_card[self.agent_role][j]:
