@@ -450,7 +450,7 @@ class SplendorEnvSimple(gymnasium.Env):
             noble_id = self.noble_usable[i]
             flag = True
             for j in range(5):
-                if self.noble_usable[j] <= self.agent_card[self.agent_role][j]:
+                if self.noble_banquet[noble_id][j] > self.agent_card[self.agent_role][j]:
                     flag = False
                     break
             if flag:
